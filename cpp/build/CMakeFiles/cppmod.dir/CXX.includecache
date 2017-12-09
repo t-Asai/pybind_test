@@ -32,6 +32,12 @@ tuple
 string_view
 -
 
+../pybind11/include/pybind11/complex.h
+pybind11.h
+../pybind11/include/pybind11/pybind11.h
+complex
+-
+
 ../pybind11/include/pybind11/detail/class.h
 ../attr.h
 ../pybind11/include/pybind11/attr.h
@@ -84,6 +90,34 @@ cstdio
 cstdlib
 -
 cxxabi.h
+-
+
+../pybind11/include/pybind11/numpy.h
+pybind11.h
+../pybind11/include/pybind11/pybind11.h
+complex.h
+../pybind11/include/pybind11/complex.h
+numeric
+-
+algorithm
+-
+array
+-
+cstdlib
+-
+cstring
+-
+sstream
+-
+string
+-
+initializer_list
+-
+functional
+-
+utility
+-
+typeindex
 -
 
 ../pybind11/include/pybind11/options.h
@@ -490,5 +524,9 @@ wchar.h
 
 /Users/takumi/work/program/pybind_test/cpp/cppmod.cpp
 pybind11/pybind11.h
+-
+pybind11/numpy.h
+-
+algorithm
 -
 
