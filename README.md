@@ -17,5 +17,5 @@ $ python
 ```
 
 # reference
-https://github.com/pybind/pybind11
-https://qiita.com/ignis_fatuus/items/c7523c0fe2bc2f415d50
+- https://github.com/pybind/pybind11
+- https://qiita.com/ignis_fatuus/items/c7523c0fe2bc2f415d50
