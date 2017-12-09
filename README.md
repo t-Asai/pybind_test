@@ -1,5 +1,6 @@
 # pybind_test
 # command
+```
 $ cd pybind_test/cpp/
 $ git clone git@github.com:pybind/pybind11.git
 $ cd build
@@ -13,6 +14,7 @@ $ python
 5
 >>> cppmod.sub(2, 3)
 -1
+```
 
 # reference
 https://github.com/pybind/pybind11
