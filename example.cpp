@@ -1,6 +1,7 @@
 #include <iostream>
 #include <pybind11/pybind11.h>
 #include <pybind11/numpy.h>
+#include <pybind11/stl.h> // vector用
 #include <fmt/core.h>
 
 namespace py = pybind11;
@@ -22,10 +23,16 @@ void print_array(py::array_t<T> x) {
     }
 }
 
+void print_list(std::vector<int> list) {
+    for (auto item : list)
+        std::cout << item << "\n";
+}
+
 PYBIND11_MODULE(example, m) {
     m.doc() = "pybind11 example plugin";
 
     m.def("add", &add, "A function which adds two numbers");
     m.def("print_array", &print_array<int32_t>, "");
     m.def("print_array", &print_array<double>, "");
+    m.def("print_list", &print_list, "");
 }
