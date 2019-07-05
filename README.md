@@ -4,7 +4,10 @@
 
 ```
 $ git clone git@github.com:pybind/pybind11.git
-$ c++ -O3 -Wall -shared -std=c++11 -undefined dynamic_lookup `python3 -m pybind11 --includes` example.cpp -o example`python3-config --extension-suffix`
+$ mkdir build
+$ cd build
+$ cmake ..
+$ make
 $ python
 >>> import example
 >>> example.add(2, 3)
